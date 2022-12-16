@@ -201,3 +201,23 @@ Public Function SHA512(sIn As String, Optional bB64 As Boolean = 0) As String
     
 End Function
 ```
+
+```vb
+Private Function ConvToHexString(vIn As Variant) As Variant
+    'Check that Net Framework 3.5 (includes .Net 2 and .Net 3 is installed in windows
+    'and not just Net Advanced Services 
+    
+    Dim oD As Object
+      
+    Set oD = CreateObject("MSXML2.DOMDocument")
+      
+      With oD
+        .LoadXML "<root />"
+        .DocumentElement.DataType = "bin.Hex"
+        .DocumentElement.nodeTypedValue = vIn
+      End With
+    ConvToHexString = Replace(oD.DocumentElement.Text, vbLf, "")
+    
+    Set oD = Nothing
+
+End Function```
