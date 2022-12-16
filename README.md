@@ -204,9 +204,7 @@ End Function
 
 ```vb
 Private Function ConvToHexString(vIn As Variant) As Variant
-    'Check that Net Framework 3.5 (includes .Net 2 and .Net 3 is installed in windows
-    'and not just Net Advanced Services 
-    
+
     Dim oD As Object
       
     Set oD = CreateObject("MSXML2.DOMDocument")
@@ -220,4 +218,5 @@ Private Function ConvToHexString(vIn As Variant) As Variant
     
     Set oD = Nothing
 
-End Function```
+End Function
+```
