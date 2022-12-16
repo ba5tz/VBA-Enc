@@ -1,3 +1,5 @@
+[![Author](https://img.shields.io/badge/Youtube-Andi%20Setiadi-lightgrey.svg?colorB=1D63DC&style=flat-square)]()
+
 # VBA Encoding , Encryption dan Hashing
 kumpulan script VBA untuk kebutuhan Encoding , Encryption dan Hashing
 
